@@ -1,0 +1,58 @@
+body {
+    font-family: arial;
+}
+
+h1 {
+    text-align: center;
+}
+
+table {
+    border: 1px solid black;
+    text-align: center;
+    margin: auto;
+    width: 80%;
+}
+
+th, td {
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* css for pop-up modal */
+.add-modal {
+    display: none;
+    position: fixed;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.399);
+}
+
+.modal-content{
+    border: 1px solid rgba(128, 128, 128, 0.401);
+    margin: 40px auto;
+    width: 40%;
+    height: 50%;
+    overflow: hidden;
+    text-align: center;
+    background-color: white;
+}
+
+.edit-modal {
+    display: block;
+    position: fixed;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.399);
+}
