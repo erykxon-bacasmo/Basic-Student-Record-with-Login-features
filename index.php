@@ -9,6 +9,7 @@ $result = $conn->query($sql);
 session_start();
 
 if(isset($_SESSION['id'])){?>
+<?php echo $_SESSION['name'];?>&nbsp;
 
 <!DOCTYPE html>
 <html lang="en">
@@ -127,7 +128,10 @@ if(isset($_SESSION['id'])){?>
         <link rel="stylesheet" href="stylesheet.css">
     </head>
     <body>
-        <h1>Student Record</h1>
+        <h1>Student Record</h1><br><br>
+        <a href="login.php">Wants to login?</a><br><br>
+
+        <!-- Data table -->
         <table>
             <thead>
                 <tr>
