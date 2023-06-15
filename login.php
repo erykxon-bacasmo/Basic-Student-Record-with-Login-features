@@ -36,6 +36,7 @@ if(isset($_POST['login'])){
 </head>
 <body>
     <h1>LogIn</h1><br><br>
+    <a href="index.php">Quick View?</a><br><br>
     <form action="" method="post">
         <Label>Username</Label>
         <input type="text" name="user" required><br><br>
