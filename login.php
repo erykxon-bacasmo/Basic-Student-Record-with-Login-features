@@ -36,7 +36,41 @@ if(isset($_POST['login'])){
 </head>
 <body>
     <h1>LogIn</h1><br><br>
-    <a href="index.php">Quick View?</a><br><br>
+    <a href="index.php" type="button">Quick View?</a>&nbsp;
+    <button id="add-btn">Create User</button><br><br>
+
+    <?php
+    
+    if(isset($_POST['add'])){
+        $name = $_POST['fname'];
+        $user = $_POST['user'];
+        $pass = $_POST['pass'];
+
+        $sql = "INSERT INTO user(`full_name`, `username`, `pass`) VALUES('$name', '$user', '$pass')";
+        $conn->query($sql);
+
+        echo "<script>alert('Add User Successfully!')</script>";
+        echo "<script>window.location = 'login.php'</script>";
+    }
+    
+    ?>
+    <!-- pop up modal -->
+    <div id="add-modal" class="add-modal">
+        <div class="modal-content">
+            <h2>Add Account</h2><br><br>
+            <form action="" method="post">
+                <Label>Full Name:</Label>
+                <input type="text" name="fname" id="full_name" required><br><br>
+                <Label>Username</Label>
+                <input type="text" name="user" required><br><br>
+                <Label>Password</Label>
+                <input type="password" name="pass" required><br><br>
+                <button type="submit" name="add">Register</button>
+                <button id="cancel-add">Cancel</button>
+            </form>
+        </div>
+    </div>
+
     <form action="" method="post">
         <Label>Username</Label>
         <input type="text" name="user" required><br><br>
@@ -44,5 +78,6 @@ if(isset($_POST['login'])){
         <input type="password" name="pass" required><br><br>
         <button type="submit" name="login">Login</button>
     </form>
+    <script src="main.js"></script>
 </body>
 </html>
