@@ -49,9 +49,9 @@ if(isset($_SESSION['id'])){?>
             <h2>Add Record</h2><br><br>
             <form action="" method="post">
                 <Label>Full Name:</Label>
-                <input type="text" name="fname" id="full_name" required><br><br>
+                <input type="text" name="fname" required><br><br>
                 <Label>Age:</Label>
-                <input type="integers" name="old" id="age" required><br><br>
+                <input type="integers" name="old" required><br><br>
                 <Label>Gender:</Label>
                 <select name="sex" id="gender" required>
                     <option value="" hidden></option>
@@ -59,7 +59,7 @@ if(isset($_SESSION['id'])){?>
                     <option value="Female">Female</option>
                 </select><br><br>
                 <Label>Year Level:</Label>
-                <select name="year" id="year_level" required>
+                <select name="year" required>
                     <option value="" hidden></option>
                     <option value="1st Yr">1st Yr</option>
                     <option value="2nd Yr">2nd Yr</option>
