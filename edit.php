@@ -45,7 +45,7 @@ if(!isset($_SESSION['id']) || (trim($_SESSION['id']) == '')){
 <body>
 <div id="edit-modal" class="edit-modal">
         <div class="modal-content">
-            <h2>Add Record</h2><br><br>
+            <h2>Edit Record</h2><br><br>
             <form action="" method="post">
                 <Label>Full Name:</Label>
                 <input type="text" name="fname" value="<?php echo $rows['full_name']?>" required><br><br>
