@@ -60,11 +60,11 @@ if(isset($_POST['login'])){
             <form action="" method="post">
                 <Label>Full Name:</Label>
                 <input type="text" name="fname" id="full_name" required><br><br>
-                <Label>Username</Label>
+                <Label>Username:</Label>
                 <input type="text" name="user" required><br><br>
-                <Label>Password</Label>
+                <Label>Password:</Label>
                 <input type="password" name="pass" required><br><br>
-                <button type="submit" name="add">Register</button>
+                <button type="submit" name="add">Register</button>&nbsp;&nbsp;
                 <button id="cancel-add">Cancel</button>
             </form>
         </div>
