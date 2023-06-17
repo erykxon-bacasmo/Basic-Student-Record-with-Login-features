@@ -56,3 +56,38 @@ a {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.399);
 }
+
+/* css for login */
+button {
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 2px 1px gray;
+    cursor: pointer;
+    background-color: rgb(47, 252, 47);
+    padding: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.form-login {
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+    width: 30%;
+    margin: auto;
+    background-color: rgba(128, 128, 128, 0.459);
+}
+
+.form-login form {
+
+}
+
+.form-login form > input {
+    display: flex;
+    margin: auto;
+}
+
+.menu-login {
+    text-align: center;
+}
