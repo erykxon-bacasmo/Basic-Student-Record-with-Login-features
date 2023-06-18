@@ -59,7 +59,7 @@ if(isset($_POST['login'])){
             <h2>Create Account</h2><br><br>
             <form action="" method="post">
                 <Label>Full Name:</Label>
-                <input type="text" name="fname" id="full_name" required><br><br>
+                <input type="text" name="fname" required><br><br>
                 <Label>Username:</Label>
                 <input type="text" name="user" required><br><br>
                 <Label>Password:</Label>
