@@ -21,6 +21,7 @@ if(isset($_SESSION['id'])){?>
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
+    <!-- log out button -->
     <?php
         if(isset($_SESSION['id'])){?>
             <a href="logout.php">Logout</a>
@@ -72,6 +73,8 @@ if(isset($_SESSION['id'])){?>
         </div>
     </div>
     <br><br>
+
+    <!-- data table -->
     <table>
         <thead>
             <tr>
