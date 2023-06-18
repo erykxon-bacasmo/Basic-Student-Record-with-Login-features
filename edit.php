@@ -22,6 +22,7 @@ if(isset($_POST['edit'])){
     header("location: profile.php?id=" .$id);
 }
 
+// if the user does not login first it will automatically go to the log in file
 session_start();
 
 if(!isset($_SESSION['id']) || (trim($_SESSION['id']) == '')){
