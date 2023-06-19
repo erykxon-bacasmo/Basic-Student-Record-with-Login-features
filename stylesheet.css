@@ -27,6 +27,18 @@ a {
     cursor: pointer;
 }
 
+/* Logout content */
+.logout-content {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin: 5px;
+}
+
+/* add button */ 
+.add-btn {
+    margin-inline-start: 10%;
+}
 
 
 /* Css for table */
