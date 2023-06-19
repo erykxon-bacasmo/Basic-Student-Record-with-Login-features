@@ -99,13 +99,21 @@ th, td {
     text-align: center;
     width: 30%;
     margin: auto;
-    background-color: rgba(128, 128, 128, 0.459);
+    background-color: rgba(205, 191, 191, 0.459);
+}
+
+
+.form-login Label {
+    margin-inline-end: 26%;
 }
 
 
 .form-login form > input {
     display: flex;
     margin: auto;
+    border: none;
+    box-shadow: 1px 1px black;
+    padding: 5px;
 }
 
 .menu-login {
