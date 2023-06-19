@@ -6,6 +6,31 @@ h1 {
     text-align: center;
 }
 
+button {
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 2px 1px gray;
+    cursor: pointer;
+    background-color: rgb(47, 252, 47);
+    padding: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    background-color: rgb(255, 185, 56);
+    padding: 6px;
+    border-radius: 5px;
+    box-shadow: 1px 2px 1px gray;
+    cursor: pointer;
+}
+
+
+
+/* Css for table */
+
 table {
     border: 1px solid black;
     text-align: center;
@@ -18,10 +43,6 @@ th, td {
     border-right: 1px solid black;
 }
 
-a {
-    text-decoration: none;
-    color: black;
-}
 
 /* css for pop-up modal */
 .add-modal {
@@ -58,16 +79,6 @@ a {
 }
 
 /* css for login */
-button {
-    border: none;
-    border-radius: 5px;
-    box-shadow: 1px 2px 1px gray;
-    cursor: pointer;
-    background-color: rgb(47, 252, 47);
-    padding: 5px;
-    font-size: 16px;
-    font-weight: bold;
-}
 
 .form-login {
     border: 1px solid black;
