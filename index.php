@@ -9,7 +9,6 @@ $result = $conn->query($sql);
 session_start();
 
 if(isset($_SESSION['id'])){?>
-<?php echo $_SESSION['name'];?>&nbsp;
 
 <!DOCTYPE html>
 <html lang="en">
@@ -22,13 +21,16 @@ if(isset($_SESSION['id'])){?>
 </head>
 <body>
     <!-- log out button -->
-    <?php
-        if(isset($_SESSION['id'])){?>
-            <a href="logout.php">Logout</a>
+    <div class="logout-content">
+        <?php echo $_SESSION['name'];?>&nbsp;&nbsp;
+        <?php
+            if(isset($_SESSION['id'])){?>
+                <a href="logout.php">Logout</a>
         <?php }
     ?>
+    </div>
     <h1>Student Record</h1><br><br>
-    <button id="add-btn">Add Record</button><br><br>
+    <button id="add-btn" class="add-btn">Add Record</button><br><br>
     <?php
     
     if(isset($_POST['add'])){
