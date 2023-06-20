@@ -44,7 +44,10 @@ if(!isset($_SESSION['id']) || (trim($_SESSION['id']) == '')){
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-<div id="edit-modal" class="edit-modal">
+    <h1>Welcome user <?php echo $rows['full_name']?></h1><br><br>
+    <a href="index.php">Back</a> &nbsp; &nbsp;
+    <a href="edit.php?id= <?php echo $rows['stud_id']?>">Edit Record</a><br><br>
+    <div id="edit-modal" class="edit-modal">
         <div class="modal-content">
             <h2>Edit Record</h2><br><br>
             <form action="" method="post">
