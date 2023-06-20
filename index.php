@@ -18,6 +18,7 @@ if(isset($_SESSION['id'])){?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Record</title>
     <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.min.css">
 </head>
 <body>
     <!-- log out button -->
@@ -50,19 +51,19 @@ if(isset($_SESSION['id'])){?>
     <div id="add-modal" class="add-modal">
         <div class="modal-content">
             <h2>Add Record</h2><br><br>
-            <form action="" method="post">
+            <form action="" id="formValues">
                 <Label>Full Name:</Label>
-                <input type="text" name="fname" required><br><br>
+                <input type="text" name="fname" id="name" required><br><br>
                 <Label>Age:</Label>
-                <input type="integers" name="old" required><br><br>
+                <input type="integers" name="old" id="age" required><br><br>
                 <Label>Gender:</Label>
-                <select name="sex" id="gender" required>
+                <select name="sex" id="gender" id="gender" required>
                     <option value="" hidden></option>
                     <option value="Male">Male</option>
                     <option value="Female">Female</option>
                 </select><br><br>
                 <Label>Year Level:</Label>
-                <select name="year" required>
+                <select name="year" id="year" required>
                     <option value="" hidden></option>
                     <option value="1st Yr">1st Yr</option>
                     <option value="2nd Yr">2nd Yr</option>
@@ -118,7 +119,17 @@ if(isset($_SESSION['id'])){?>
             ?>
         </tbody>
     </table>
+    <script src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.all.min.js"></script>
     <script src="main.js"></script>
+    <script>
+        if(formValues){
+            var data = 
+            {
+
+            }
+        }
+    </script>
 </body>
 </html>
 
